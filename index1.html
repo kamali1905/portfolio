@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kamali N — Portfolio</title>
+  <meta name="description" content="Portfolio website for Kamali N — Junior Frontend Developer." />
+  <style>
+    :root{
+      --bg: #0b0f14;
+      --panel: #121821;
+      --ink: #e8eef6;
+      --muted: #a7b1c2;
+      --brand: #7cc4ff;
+      --brand-2: #a58cff;
+      --accent: #78f5c4;
+      --ring: #2b3750;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 18px;
+      --maxw: 1080px;
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f6f8fc; --panel:#ffffff; --ink:#0b1020; --muted:#47546b; --ring:#e7edf7;
+      }
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font:16px/1.6 system-ui; color:var(--ink); background:var(--bg)}
+    a{color:var(--brand)}
+    img{max-width:100%; display:block}
+    .wrap{max-width:var(--maxw); margin:auto; padding:24px}
+    header{position:sticky; top:0; z-index:10; backdrop-filter:blur(8px)}
+    .nav{display:flex; justify-content:space-between; align-items:center; background:var(--panel); border:1px solid var(--ring); border-radius:calc(var(--radius)-6px); padding:10px 14px; margin:12px auto; box-shadow:var(--shadow)}
+    .brand{display:flex; gap:12px; align-items:center; text-decoration:none; color:inherit}
+    .logo{width:40px; height:40px; border-radius:12px; background:conic-gradient(from 200deg, var(--brand), var(--brand-2), var(--accent))}
+    .links{display:flex; gap:6px; flex-wrap:wrap}
+    .links a{padding:8px 12px; text-decoration:none; border-radius:12px; color:inherit}
+    .hero{display:grid; grid-template-columns:1.2fr .8fr; gap:28px; align-items:center}
+    @media(max-width:860px){.hero{grid-template-columns:1fr}}
+    .card{background:var(--panel); border:1px solid var(--ring); border-radius:var(--radius); box-shadow:var(--shadow)}
+    .pad{padding:28px}
+    h1{font-size:clamp(28px,3vw,44px); line-height:1.2; margin:0 0 10px}
+    h2{font-size:clamp(22px,2.4vw,30px); margin:0 0 14px}
+    .muted{color:var(--muted)}
+    .btn{border:1px solid var(--ring); padding:10px 14px; border-radius:14px; text-decoration:none; background:var(--panel); font-weight:600; box-shadow:var(--shadow); color:var(--ink)}
+    .btn.primary{background:var(--brand); color:#000}
+    .tags{display:flex; gap:8px; flex-wrap:wrap}
+    .tag{padding:6px 10px; border-radius:999px; border:1px solid var(--ring); background:var(--panel); font-size:13px}
+    section{margin-top:30px}
+    footer{text-align:center; padding:40px 24px; color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top"><span class="logo"></span><span>Kamali N</span></a>
+      <nav class="links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="#resume">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="card pad">
+        <h1>Hi, I’m <span style="background:linear-gradient(90deg,var(--brand),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent">Kamali N</span> — Junior Frontend Developer</h1>
+        <p class="muted">3rd-year Electrical and Electronics Engineering student with hands-on experience building responsive and interactive web interfaces using HTML, CSS, JavaScript, React, and Tailwind CSS.</p>
+        <div class="tags">
+          <span class="tag">Frontend Development</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">React</span><span class="tag">Tailwind CSS</span><span class="tag">Responsive Design</span><span class="tag">Component Architecture</span><span class="tag">Git</span><span class="tag">GitHub</span>
+        </div>
+      </div>
+      <div class="card avatar">
+  <img src="kamali.png.jpg" alt="Photo of Kamali N" height="750px">
+</div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="card pad">
+      <h2>About</h2>
+      <p>I am a frontend developer passionate about creating clean, interactive, and responsive interfaces. With strong skills in component-based design and modern frameworks, I aim to apply my knowledge to real-world projects while continuing to learn in fast-paced environments.</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="card pad">
+      <h2>Skills</h2>
+      <div class="tags">
+        <span class="tag">Frontend Development</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">React</span>
+        <span class="tag">Tailwind CSS</span>
+        <span class="tag">Responsive Design</span>
+        <span class="tag">Component-Based Architecture</span>
+        <span class="tag">Git</span>
+        <span class="tag">GitHub</span>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="card pad">
+      <h2>Projects</h2>
+      <h3>Coding Ninjas Clone</h3>
+      <p>Built a responsive Coding Ninjas clone using React, Tailwind CSS, HTML, and JavaScript. Created reusable UI components and implemented mobile-first design.</p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="card pad">
+      <h2>Experience</h2>
+      <p><strong>CodexIntern — Frontend Developer Intern</strong> (Jul 2025 - Jul 2025)<br>Built a responsive Coding Ninjas clone using React, Tailwind CSS, HTML, and JavaScript. Created reusable UI components and implemented mobile-first design. Used Git and GitHub for version control.</p>
+      <p><strong>Emcog Solution Pvt. Ltd. — Embedded Systems Intern</strong> (Jun 2025 - Aug 2025)<br>Developed Arduino-based projects using IR sensor, temperature sensor, touch sensor, and servo motor. Wrote embedded C/C++ code and supported circuit prototyping.</p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="card pad">
+      <h2>Education</h2>
+      <p><strong>GRT Institute of Engineering and Technology</strong><br>Bachelor of Engineering (B.E.) — Electrical and Electronics Engineering</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card pad">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:nkamali1905@gmail.com">nkamali1905@gmail.com</a></p>
+      <p>GitHub:<a href="https://github.com/kamali1905" target="_blank">github.com/kamali1905</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/kamali19" target="_blank">linkedin.com/in/kamali19</a></p>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="card pad">
+      <h2>Resume</h2>
+      <a class="btn" href="resume-example.pdf" download>Download Resume (PDF)</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Kamali N. Built with ♥ using only HTML & CSS.</p>
+  </footer>
+</body>
+</html>
